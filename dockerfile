@@ -34,3 +34,5 @@ networks:
   wpsite:
 volumes:
   db_data:
+#mysql -u wordpress -p password -h 172.20.0.2 -P 3306
+#above command will attach to mysql
