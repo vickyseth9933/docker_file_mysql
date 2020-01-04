@@ -21,7 +21,7 @@ services:
       - db
     image: wordpress:latest
     ports:
-      - '8000:80'
+      - '8191:80'
     restart: always
     volumes: ['./:/var/www/html']
     environment:
@@ -34,3 +34,5 @@ networks:
   wpsite:
 volumes:
   db_data:
+#mysql -u wordpress -p password -h 172.20.0.2 -P 3306
+#above command will attach to mysql
